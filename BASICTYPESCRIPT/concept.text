@@ -1,0 +1,6 @@
+// npm i  -g typescript
+// tsc -v compiler
+// tsc index.ts
+// node index.js
+// one step npm i -g ts-node
+// ts-node index.ts
