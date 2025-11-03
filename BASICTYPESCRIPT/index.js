@@ -9,16 +9,6 @@
 // input="saalx"
 // if(typeof input ==='string')
 // console.log(input.toUpperCase())
-// exercise one
-// let productName:string;
-// let prices:number;
-// let disAccounts:boolean;
-// productName=12;
-// prices="saalax";
-// disAccounts=12.2
-// productName="saalx";
-// prices=12;
-// disAccounts=true
 // function get(price:number,discount:number):number{
 //     return price-price*discount
 // }
@@ -34,18 +24,6 @@
 // let numbers:Array<number>=[1,2,3,4]
 // // tuble
 // let entry:[string,number]=['faadum',12]
-// // excercise two
-// // 1
-// let numbers:string[]=["salx","saacid"]
-// numbers.push(12)
-// let grades:number[]=[1,2,3,4]
-// grades.push('homouda')
-// let state:boolean[]=[true,false]
-// state.push('geedi')
-// // 2
-// let products:string[]=["sharafdin",13,"saacid"]
-// // 3
-// let locations:[string,number,number]=["moqadisho",12,34]
 // function great(name:string):string{
 //     return `Hellow ${name.toUpperCase()}`
 // }
@@ -60,6 +38,11 @@
 //     return console.log(name)
 // }
 // welcome()
+function reduce(num) {
+    return num.reduce(function (a, b) { return a * b; }, 1);
+}
+var result = reduce([10, 2]);
+console.log(result);
 // // rest Operator
 // function rest(numbers:number[]):number{
 //    return numbers.reduce((a,b)=>a+b,0)
@@ -67,22 +50,18 @@
 // console.log(rest([1,2,3]))
 // exercise 3
 // 1
-function fullName(fisrt, last) {
-    return ("Your FullName".concat(fisrt, " ").concat(last));
-}
-console.log(fullName("faarax", "cali"));
+// function fullName(fisrt:string,last:string):string{
+//     return (`Your FullName${fisrt} ${last}`) 
+// }
+// console.log(fullName("faarax","cali")
+// )
 // 2
-function registerUser(username, isAdmin, language) {
-    if (language === void 0) { language = "eng"; }
-    return ("".concat(username).concat(isAdmin, ",").concat(language));
-}
-console.log(registerUser("homouda"));
-// 3
-function average() {
-    var numbers = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        numbers[_i] = arguments[_i];
-    }
-    return numbers.reduce(function (a, b) { return a * b; }, 1);
-}
-console.log(average(10, 20));
+// function registerUser(username:string,isAdmin?:boolean,language:string="eng"){
+//     return (`${username}${isAdmin},${language}`)
+// }
+// console.log(registerUser("homouda"))
+// // 3
+// function average(...numbers:number[]):number{
+//     return numbers.reduce((a,b)=>a*b,1)
+// }
+// console.log(average(10,20))
